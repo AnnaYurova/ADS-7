@@ -3,7 +3,7 @@
 #define INCLUDE_TPQUEUE_H_
 
 template<typename T>
- class TPQueue {
+class TPQueue {
   private:
   struct ITEM {
     T value;
@@ -101,7 +101,7 @@ template<typename T>
       return rmHead();
     }
   }
- };
+};
 
 struct SYM {
   char ch;

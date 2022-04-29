@@ -19,7 +19,7 @@ template<typename T>
     return item;
   }
 
- public:
+  public:
   TPQueue() {
     head = tail = nullptr;
     current = nullptr;

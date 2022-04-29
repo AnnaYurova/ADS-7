@@ -3,7 +3,7 @@
 #define INCLUDE_TPQUEUE_H_
 
 template<typename T>
-class TPQueue {
+ class TPQueue {
   private:
   struct ITEM {
     T value;
@@ -76,13 +76,13 @@ class TPQueue {
     while (temp && temp->value.prior >= item->value.prior) {
       temp = temp->next;
     }
-    if (!temp && head) {// вставка в конец
+    if (!temp && head) {
       tail->next = item;
       tail->next->prev = tail;
       tail = tail->next;
-    } else if (!temp && !head) {//вставка в пустой список
+    } else if (!temp && !head) {
       head = tail = item;
-    } else if (!temp->prev) { //вставка в начало
+    } else if (!temp->prev) {
       head->prev = item;
       head->prev->next = head;
       head = head->prev;

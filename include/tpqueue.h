@@ -101,7 +101,7 @@ template<typename T>
       return rmHead();
     }
   }
-};
+ };
 
 struct SYM {
   char ch;
